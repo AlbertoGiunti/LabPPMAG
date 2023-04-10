@@ -1,0 +1,364 @@
+.mymenuitem {
+    color: white;
+}
+
+.navbar1style {
+    font-family: ProximaNova;
+    font-size:.875rem;
+    font-weight: 700;
+}
+
+.navbar2style {
+    font-family: ProximaNova;
+    font-size:.75rem;
+    font-weight: 700;
+    color:#0dbe98;
+}
+
+.mysubmenuitem {
+    color: white;
+    font-family: Montserrat,sans-serif;
+    font-size: .6875rem;
+    font-weight: 700;
+}
+
+.huffpost{
+    text-decoration-line: none;
+}
+
+.titolo-link a:link, .titolo-link a:visited {
+    color:black;
+    font-family:ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
+    font-weight:800;
+    font-size:calc(10px + 6.25vw);
+    text-decoration-color:black;
+    line-height:1em;
+}
+
+.titolo-link a:hover{
+    text-decoration-color:#0dbe98;
+}
+
+.immagine-principale{
+    width:100%;
+    max-width: 600px;
+
+}
+
+.titolo-sezione{
+    font-weight:bolder;
+}
+
+
+.mycardtitle, .mycardtitle a:link, .mycardtitle a:visited {
+    color: #333;
+    margin-top: 0;
+    font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
+    font-size: .875rem;
+    font-weight: 700;
+    letter-spacing: .025rem;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+}
+
+.mycardparagraph, .mycardparagraph a:link, .mycardparagraph a:visited {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.mycardparagraph:hover{
+    text-decoration: underline;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.horizontal-card, .horizontal-card a:link, .horizontal-card a:visited{
+    color: black;
+    text-decoration: none;
+    font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.horizontal-card:hover{
+    text-decoration: underline;
+    color: black;
+    font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.titolo-LIFE{
+    text-shadow: #f711c0 2px 2px;
+    color: #171d67;
+    font-family: Montserrat,sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+}
+
+.LIFE-card{
+    background-color: #e7fcff;
+    padding: 0 16px 32px;
+    border: none;
+}
+
+.LIFE-container{
+    padding: 0 32px 32px 0;
+}
+
+.LIFE-title{
+    color: #0d0eca;
+    font-family: Montserrat,sans-serif;
+    font-size: .8125rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin: 16px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.LIFE-card-title{
+    font-family: Montserrat,sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.LIFE-card-paragraph{
+    font-family: Montserrat,sans-serif;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    margin-top: 16px;
+    color: #000;    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+}
+
+.LIFE-img{
+
+}
+
+.mycard {
+    border: none;
+}
+
+.tip-title {
+    color: #3a3a3a;
+    display: flex;
+    font-family: ProximaNovaCond, ProximaNovaCondFallback, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    justify-content: center;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: border-box;
+}
+
+.tip-par{
+    font-size: 18px;
+    line-height: 20px;
+    white-space: pre-wrap;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.tip-link{
+    font-size: 18px;
+    line-height: 20px;
+    white-space: pre-wrap;
+    text-decoration: underline;
+    color: unset;
+
+}
+
+.myvideo {
+    width: 100%;
+    aspect-ratio: auto 560 / 315;
+}
+
+.myscroll {
+    overflow-y: auto;
+    max-height: 340px;
+    overflow-x: hidden;
+    line-height: 1;
+    scrollbar-width: thin;
+    scrollbar-color: gray black;
+}
+
+.myscroll a, .myscroll a:hover, .myscroll a:link {
+    color:white;
+    font-size: 8pt;
+
+}
+
+.myscrollimg {
+    height:70px;
+}
+
+.myscrolltxt {
+    height:70px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+    .myscroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        height: 150px;
+    }
+
+    .myscrollimg {
+        height:auto;
+        width:100px;
+    }
+
+    .myscrolltxt {
+        height:auto;
+        width:100px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    .myscroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        height: 150px;
+    }
+    .myscrollimg {
+        height:auto;
+        width:100px;
+    }
+
+    .myscrolltxt {
+        height:auto;
+        width:100px;
+    }
+
+}
+
+.bottom-card-title, .bottom-card-title a:link, .bottom-card-title a:visited {
+    color: black;
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
+    font-weight: 700;
+    line-height: 1.07;
+    box-sizing: border-box;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.bottom-card-title:hover {
+    text-decoration: underline;
+    color: black;
+    font-size: 1.75rem;
+    font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
+    font-weight: 700;
+    line-height: 1.07;
+    box-sizing: border-box;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.bottom-card-description{
+    margin-top: 8px;
+    color: #000;
+    font-family: ProximaNova;
+    font-size: 1rem;
+    line-height: 1.25;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+}
+
+.author{
+    color: #444;
+    font-family: ProximaNova;
+    font-size: .875rem;
+    line-height: 1rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-transform: uppercase;
+}
+
+.bold-line{
+    border-top: 2px solid #000;
+    padding-top: 24px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.huff-personal{
+    font-size: 24px;
+    letter-spacing: .5px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    font-family: Alfa Slab One;
+    font-weight: 400;
+    line-height: 2.625rem;
+    box-sizing: border-box;
+    padding: 0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
