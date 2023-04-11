@@ -2,24 +2,96 @@
     color: white;
 }
 
-.navbar1style {
+.login, .login:link, .login:visited {
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
     font-family: ProximaNova;
-    font-size:.875rem;
+    font-size: .875rem;
     font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-.navbar2style {
+.login:hover{
+    box-sizing: border-box;
+    color: #0dbe98;
+    display: block;
+    font-family: ProximaNova;
+    font-size: .875rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.join, .join:link, .join:visited {
+    box-sizing: border-box;
+    color: #0dbe98;
+    display: block;
+    font-family: ProximaNova;
+    font-size: .875rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-right: 30px;
+}
+
+.join:hover{
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-family: ProximaNova;
+    font-size: .875rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar2style, .navbar2style:link, .navbar2style:visited {
+    font-family: ProximaNova;
+    font-size:.75rem;
+    font-weight: 700;
+    color: #0dbe98;
+    text-decoration-color: white;
+}
+
+.navbar2style:hover {
     font-family: ProximaNova;
     font-size:.75rem;
     font-weight: 700;
     color:#0dbe98;
+    text-decoration-color: #0dbe98;
 }
 
 .mysubmenuitem {
-    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 782px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.subitem, .subitem:link, .subitem:visited{
+    color: #fff;
     font-family: Montserrat,sans-serif;
-    font-size: .6875rem;
+    font-size: .75rem;
     font-weight: 700;
+    letter-spacing: .43px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.subitem:hover{
+    color: #fff;
+    font-family: Montserrat,sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .43px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration-line: underline;
 }
 
 .huffpost{
@@ -65,11 +137,15 @@
 }
 
 .mycardparagraph, .mycardparagraph a:link, .mycardparagraph a:visited {
-    color: black;
-    text-decoration: none;
     font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
     font-weight: 700;
     line-height: 1.1;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -79,15 +155,7 @@
 
 .mycardparagraph:hover{
     text-decoration: underline;
-    color: black;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.1;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
 }
 
 .horizontal-card, .horizontal-card a:link, .horizontal-card a:visited{
@@ -119,13 +187,19 @@
 }
 
 .titolo-LIFE{
-    text-shadow: #f711c0 2px 2px;
+    font-size: 2.25rem;
     color: #171d67;
     font-family: Montserrat,sans-serif;
     font-weight: 900;
     letter-spacing: 1.5px;
+    text-shadow: 2px 2px #f711c0;
     text-transform: uppercase;
-    font-size: 2.25rem;
+    margin: 0 auto;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .LIFE-card{
@@ -149,12 +223,13 @@
     text-decoration: none;
 }
 
-.LIFE-card-title{
+.LIFE-card-title, .LIFE-card-title:link, .LIFE-card-title:visited{
     font-family: Montserrat,sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2;
     color: #000;
+    text-decoration: none;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -163,6 +238,23 @@
     margin: 0;
     padding: 0;
 }
+
+.LIFE-card-title:hover{
+    font-family: Montserrat,sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    text-decoration: underline;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .LIFE-card-paragraph{
     font-family: Montserrat,sans-serif;
     font-size: .875rem;
@@ -285,6 +377,20 @@
 
 }
 
+.small-par{
+    color: #767676;
+    text-align: center;
+    font-family: ProximaNova;
+    font-size: .75rem;
+    letter-spacing: 0;
+    line-height: .8125rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .bottom-card-title, .bottom-card-title a:link, .bottom-card-title a:visited {
     color: black;
     text-decoration: none;
@@ -361,4 +467,127 @@
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+.more{
+    color: #0d0eca;
+    font-family: ProximaNova;
+    font-size: .75rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: right;
+}
+
+.more-card{
+    border: none;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.more-par, .more-par:link, .more-par:visited{
+    color: #000;
+    text-decoration: none;
+    font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.more-par:hover{
+    color: #000;
+    text-decoration: underline;
+    font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.footer-line{
+    color: white;
+}
+
+.myfooter{
+    background-color: black;
+    padding: 0 15px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer{
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 176px;
+    margin: auto;
+    max-width: 1280px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.footer-link-sx, .footer-link-sx:link, .footer-link-sx:visited{
+    color: #fff;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    letter-spacing: .02687rem;
+    cursor: pointer;
+    margin-bottom: 0.9375rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.footer-link-sx:hover{
+    color: #0dbe98;
+}
+
+.footer-link-dx, .footer-link-dx:link, .footer-link-dx:visited{
+    color: #e5e5e5;
+    font-family: ProximaNova;
+    letter-spacing: .02375rem;
+    min-width: 8.75rem;
+    font-size: .625rem;
+    text-decoration: none;
+}
+
+.footer-link-dx:hover{
+    color: #0dbe98;
+}
+
+.bot{
+    align-items: normal;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    font-family: ProximaNova;
+    font-size: .8125rem;
+    opacity: .8;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+
+.left-bot{
+
+}
+
+.right-bot{
+    color: #fff;
+    font-weight: 600;
+    font-family: ProximaNova;
+    font-size: .8125rem;
+    text-align: center;
 }
