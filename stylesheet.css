@@ -67,7 +67,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 782px;
+    width: 660px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -136,6 +136,7 @@
     text-decoration: none;
 }
 
+
 .mycardparagraph, .mycardparagraph a:link, .mycardparagraph a:visited {
     font-size: 1rem;
     color: #000;
@@ -158,32 +159,31 @@
 
 }
 
-.horizontal-card, .horizontal-card a:link, .horizontal-card a:visited{
-    color: black;
+.hor-card {
+    height:92px;
+    overflow-y:hidden;
+}
+
+.hor-text, .hor-text:link, .hor-text:visited  {
+    font-size: 0.9rem;
+    color: #000;
     text-decoration: none;
     font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
-    font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.1;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: left;
     display: block;
-    margin-block-start: 1em;
+    margin-block-start: 0em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
-.horizontal-card:hover{
-    text-decoration: underline;
-    color: black;
-    font-family: ProximaNovaCond,ProximaNovaCondFallback,sans-serif;
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 1.1;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.hor-text:hover {
+    text-decoration:underline;
 }
 
 .titolo-LIFE{
@@ -335,46 +335,6 @@
 
 .myscrolltxt {
     height:70px;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 576px) {
-    .myscroll {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        width: 100%;
-        height: 150px;
-    }
-
-    .myscrollimg {
-        height:auto;
-        width:100px;
-    }
-
-    .myscrolltxt {
-        height:auto;
-        width:100px;
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 768px) {
-    .myscroll {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        width: 100%;
-        height: 150px;
-    }
-    .myscrollimg {
-        height:auto;
-        width:100px;
-    }
-
-    .myscrolltxt {
-        height:auto;
-        width:100px;
-    }
-
 }
 
 .small-par{
@@ -580,9 +540,6 @@ ul {
     display: flex;
 }
 
-.left-bot{
-
-}
 
 .right-bot{
     color: #fff;
@@ -590,4 +547,194 @@ ul {
     font-family: ProximaNova;
     font-size: .8125rem;
     text-align: center;
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+
+    #navtop2 {
+        display:none;
+    }
+
+    .container {
+        margin-right: 0;
+        margin-left: 0;
+        max-width:100%;
+    }
+
+    .myscroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        height: 150px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .myscrollimg {
+        height:auto;
+        width:100px;
+    }
+
+    .myscrolltxt {
+        height:auto;
+        width:100px;
+    }
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+
+
+    #navtop2 {
+        display:none;
+    }
+
+
+    .myscroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        height: 150px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .myscrollimg {
+        height:auto;
+        width:100px;
+    }
+
+    .myscrolltxt {
+        height:auto;
+        width:100px;
+    }
+
+}
+
+/* Medium devices (phones, 600px and down) */
+@media only screen and (max-width: 992px) {
+    .myscroll {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: 150px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .myscrollimg {
+        height:auto;
+        width:100px;
+    }
+
+    .myscrolltxt {
+        height:auto;
+        width:100px;
+    }
+
+    .hor-card {
+        height:65px;
+        overflow-y:hidden;
+    }
+    .hor-text {
+        font-size:0.75em;
+    }
+
+}
+
+/* Large devices (phones, 600px and down) */
+@media only screen and (max-width: 1200px) {
+    .myscroll {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: 280px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .myscrollimg {
+        height:auto;
+        width:100px;
+    }
+
+    .myscrolltxt {
+        height:auto;
+        width:100px;
+    }
+
+    .hor-card {
+        height:65px;
+        overflow-y:hidden;
+    }
+    .hor-text {
+        font-size:0.75em;
+    }
+
+}
+
+/* XLarge devices (phones, 600px and down) */
+@media only screen and (min-width: 1201px) {
+    .myscroll {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: 400px;
+
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+
+
+    .myscrollimg {
+        height:auto;
+        width:100px;
+    }
+
+    .myscrolltxt {
+        height:auto;
+        width:100px;
+    }
+
+    .hor-card {
+        height:65px;
+        overflow-y:hidden;
+    }
+    .hor-text {
+        font-size:0.75em;
+    }
+
 }
