@@ -121,6 +121,9 @@
     font-weight:bolder;
 }
 
+.mycardbody{
+    padding: 5px 0px 0px 0px;
+}
 
 .mycardtitle, .mycardtitle a:link, .mycardtitle a:visited {
     color: #333;
@@ -129,7 +132,6 @@
     font-size: .875rem;
     font-weight: 700;
     letter-spacing: .025rem;
-    margin-bottom: 7px;
     text-transform: uppercase;
     box-sizing: border-box;
     padding: 0;
@@ -138,6 +140,7 @@
 
 
 .mycardparagraph, .mycardparagraph a:link, .mycardparagraph a:visited {
+    margin-top: 8px;
     font-size: 1rem;
     color: #000;
     text-decoration: none;
@@ -145,18 +148,12 @@
     font-weight: 700;
     line-height: 1.1;
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 .mycardparagraph:hover{
     text-decoration: underline;
-
 }
 
 .hor-card {
@@ -204,12 +201,12 @@
 
 .LIFE-card{
     background-color: #e7fcff;
-    padding: 0 16px 32px;
+    padding: 0px;
     border: none;
 }
 
-.LIFE-container{
-    padding: 0 32px 32px 0;
+.LIFE-card-body{
+    padding: 0px 16px 32px 16px;
 }
 
 .LIFE-title{
@@ -264,10 +261,6 @@
     margin-bottom: 0;
     padding: 0;
     display: block;
-}
-
-.LIFE-img{
-
 }
 
 .mycard {
@@ -326,7 +319,6 @@
 .myscroll a, .myscroll a:hover, .myscroll a:link {
     color:white;
     font-size: 8pt;
-
 }
 
 .myscrollimg {
@@ -554,7 +546,7 @@ ul {
 
 
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (under 576px) */
 @media only screen and (max-width: 576px) {
 
     #navtop2 {
@@ -591,9 +583,15 @@ ul {
         height:auto;
         width:100px;
     }
+
+    .mycontainer {
+        margin: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
-/* Small devices (phones, 600px and down) */
+/* Small devices (between 577px and 768px) */
 @media only screen and (max-width: 768px) {
 
 
@@ -626,15 +624,21 @@ ul {
         width:100px;
     }
 
+    .mycontainer {
+        margin: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+
 }
 
-/* Medium devices (phones, 600px and down) */
+/* Medium devices (between 769px and 992px) */
 @media only screen and (max-width: 992px) {
     .myscroll {
         overflow-x: hidden;
         overflow-y: scroll;
         width: 100%;
-        height: 150px;
+        height: 250px;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
@@ -662,15 +666,20 @@ ul {
         font-size:0.75em;
     }
 
+    .mycontainer {
+        margin: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
-/* Large devices (phones, 600px and down) */
+/* Large devices (between 993px and 1200px) */
 @media only screen and (max-width: 1200px) {
     .myscroll {
         overflow-x: hidden;
         overflow-y: scroll;
         width: 100%;
-        height: 280px;
+        height: 340px;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
@@ -698,15 +707,22 @@ ul {
         font-size:0.75em;
     }
 
+
+    .mycontainer {
+        margin: 0px 0px 60px;
+        width: 100%;
+        max-width: 100%;
+    }
+
 }
 
-/* XLarge devices (phones, 600px and down) */
+/* XLarge devices (over 1200px) */
 @media only screen and (min-width: 1201px) {
     .myscroll {
         overflow-x: hidden;
         overflow-y: scroll;
         width: 100%;
-        height: 400px;
+        height: 475px;
 
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
