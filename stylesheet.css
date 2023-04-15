@@ -156,9 +156,39 @@
     text-decoration: underline;
 }
 
+.shopping-zone{
+    max-width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+    display: block;
+}
+
 .hor-card {
-    height:92px;
-    overflow-y:hidden;
+    border:none;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 24px 0 0;
+    padding-bottom: 24px;
+}
+
+.hor-card img{
+    width: 92px;
+    height: 92px;
+}
+
+.hor-body{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 50px;
+    width: calc(50% - 8px);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 10px;
 }
 
 .hor-text, .hor-text:link, .hor-text:visited  {
@@ -396,14 +426,16 @@
     aspect-ratio: auto 560 / 315;
 }
 
+
 .myscroll {
     overflow-y: auto;
-    max-height: 340px;
+    max-height: 475px;
     overflow-x: hidden;
     line-height: 1;
     scrollbar-width: thin;
     scrollbar-color: gray black;
 }
+
 
 .myscroll a, .myscroll a:hover, .myscroll a:link {
     color:white;
@@ -415,14 +447,69 @@
 }
 
 .myscrolltxt {
-    height:70px;
+    color: #fff;
+    margin: 8px;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    width: auto;
+    font-size: 18px;
+    position: unset !important;
+    font-weight: 700 !important;
+
 }
 
-.personal-area{} /* TODO */
+/*
+.hor-card {
+    border:none;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 24px 0 0;
+    padding-bottom: 24px;
+}
+
+.hor-card img{
+    width: 92px;
+    height: 92px;
+}
+
+.hor-body{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 50px;
+    width: calc(50% - 8px);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 10px;
+}*/
 
 .huff-pers-card{
-    padding: 0px 0px 25px;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding-bottom: 25px;
+    width: 100%;
     border-bottom: 1px solid #d8d8d8;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
+}
+
+.huff-pers-card img{
+    width: 76px;
+    height: 76px;
+}
+
+.huff-pers-body{
+    padding-left: 15px;
+
 }
 
 .huff-pers-par, .huff-pers-par:link, .huff-pers-par:visited{
@@ -524,7 +611,7 @@
     line-height: 1rem;
     text-decoration: none;
     box-sizing: border-box;
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
     display: block;
     text-transform: uppercase;
@@ -674,9 +761,219 @@ ul {
     text-align: center;
 }
 
+/* XXLarge screen and over*/
+@media only screen and (min-width: 1401px){
+    .myscroll {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: auto;
+
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
 
 
+    .bot-hor-card{
+        border: none;
+        padding: 32px 0;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
+    .bot-hor-body{
+        padding-left: 32px;
+    }
+
+}
+
+
+/* XLarge devices (under 1400px) */
+@media only screen and (max-width: 1400px) {
+    .myscroll {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: 408px;
+
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .bot-hor-card{
+        border: none;
+        padding: 32px 0;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .bot-hor-body{
+        padding-left: 32px;
+    }
+
+}
+
+/* Large devices (between 993px and 1200px) */
+@media only screen and (max-width: 1200px) {
+    .myscroll {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: 414px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .myscrolling {
+        height:auto;
+        width:100px;
+    }
+
+    .mycontainer {
+        margin: 0px 0px 60px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bot-hor-card{
+        border: none;
+        padding: 32px 0;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .bot-hor-body{
+        padding-left: 32px;
+    }
+}
+
+/* Medium devices (between 769px and 992px) */
+@media only screen and (max-width: 992px) {
+    .myscroll {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: 342px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .myscrolling {
+        height:auto;
+        width:100px;
+    }
+
+    .mycontainer {
+        margin: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .shopping-zone{
+        margin-left: 124px;
+        margin-right: 124px;
+        margin-bottom: 60px;
+    }
+
+    .bot-hor-card{
+        border: none;
+        padding: 32px 0;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .bot-hor-body{
+        padding-left: 32px;
+    }
+}
+
+/* Small devices (between 577px and 768px) */
+@media only screen and (max-width: 768px) {
+
+    .log-section{
+        text-indent: -9999px;
+        background: url("Login-img.jpg");
+        width: 22px;
+        height: 22px;
+        margin-right: 5px;
+    }
+
+    #navtop2 {
+        display:none;
+    }
+
+    .myscroll {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: 262px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .myscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .myscrolling {
+        height:auto;
+        width:100px;
+    }
+
+    .mycontainer {
+        margin: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .shopping-zone{
+        max-width: 100%;
+    }
+
+    .bot-hor-card{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 100%;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    .bot-hor-body{
+        padding-left: 32px;
+    }
+
+}
 
 
 /* Extra small devices (under 576px) */
@@ -693,10 +990,10 @@ ul {
     }
 
     .myscroll {
-        overflow-x: scroll;
-        overflow-y: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
         width: 100%;
-        height: 150px;
+        height: 185px;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
@@ -708,51 +1005,6 @@ ul {
 
 
     .myscrolling {
-        height:auto;
-        width:100px;
-    }
-
-    .myscrolltxt {
-        height:auto;
-        width:100px;
-    }
-
-    .mycontainer {
-        margin: 0px;
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
-/* Small devices (between 577px and 768px) */
-@media only screen and (max-width: 768px) {
-
-
-    #navtop2 {
-        display:none;
-    }
-
-
-    .myscroll {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        width: 100%;
-        height: 150px;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .myscroll::-webkit-scrollbar {
-        display: none;
-    }
-
-    .myscrolling {
-        height:auto;
-        width:100px;
-    }
-
-    .myscrolltxt {
         height:auto;
         width:100px;
     }
@@ -763,125 +1015,49 @@ ul {
         max-width: 100%;
     }
 
-}
-
-/* Medium devices (between 769px and 992px) */
-@media only screen and (max-width: 992px) {
-    .myscroll {
-        overflow-x: hidden;
-        overflow-y: scroll;
+    .bot-hor-card{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px 0;
         width: 100%;
-        height: 250px;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        border: none;
+        box-sizing: border-box;
     }
 
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .myscroll::-webkit-scrollbar {
-        display: none;
-    }
-
-    .myscrolling {
-        height:auto;
-        width:100px;
-    }
-
-    .myscrolltxt {
-        height:auto;
-        width:100px;
-    }
-
-    .hor-card {
-        height:65px;
-        overflow-y:hidden;
-    }
-    .hor-text {
-        font-size:0.75em;
-    }
-
-    .mycontainer {
-        margin: 0px;
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
-/* Large devices (between 993px and 1200px) */
-@media only screen and (max-width: 1200px) {
-    .myscroll {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        width: 100%;
-        height: 340px;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .myscroll::-webkit-scrollbar {
-        display: none;
-    }
-
-    .myscrolling {
-        height:auto;
-        width:100px;
-    }
-
-    .myscrolltxt {
-        height:auto;
-        width:100px;
-    }
-
-    .hor-card {
-        height:65px;
-        overflow-y:hidden;
-    }
-    .hor-text {
-        font-size:0.75em;
-    }
-
-
-    .mycontainer {
-        margin: 0px 0px 60px;
-        width: 100%;
-        max-width: 100%;
+    .bot-hor-body{
+        padding-left: 32px;
     }
 
 }
 
-/* XLarge devices (over 1200px) */
-@media only screen and (min-width: 1201px) {
-    .myscroll {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        width: 100%;
-        height: 475px;
 
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
 
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .myscroll::-webkit-scrollbar {
-        display: none;
-    }
+.myscrollcard{
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background: none;
+    height: 70px !important;
+    padding: 0;
+    background: unset !important;
 
-    .myscrolling {
-        height:auto;
-        width:100px;
-    }
+}
 
-    .myscrolltxt {
-        height:auto;
-        width:100px;
-    }
+.myscrollcardbody{
+    text-align: start;
+    padding-left: 10px;
+    padding-right: 5px;
+    height: 65px !important;
+    min-width: 90px;
+}
 
-    .hor-card {
-        height:65px;
-        overflow-y:hidden;
-    }
-    .hor-text {
-        font-size:0.75em;
-    }
-
+.scroll-txt{
+    color: white;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
 }
