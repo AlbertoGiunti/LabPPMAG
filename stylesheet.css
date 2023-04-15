@@ -499,6 +499,11 @@
     display: block;
 }
 
+.huff-pers-par:hover{
+    text-decoration: underline;
+}
+
+
 .huff-pers-author, .huff-pers-author:link, .huff-pers-author:visited{
     font-size: .8125rem;
     line-height: 1.23;
