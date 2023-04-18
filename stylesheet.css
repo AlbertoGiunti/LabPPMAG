@@ -980,6 +980,9 @@ ul {
         display: none;
     }
 
+    .shopping-zone{
+        margin:0px;
+    }
 
     .myscrolling {
         height:auto;
