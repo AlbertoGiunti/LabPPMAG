@@ -2,6 +2,105 @@
     color: white;
 }
 
+.offcanvas-body{
+    padding: 20px 30px;
+}
+
+.offcanvas-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.us-offcanvas{
+    color: rgb(255, 255, 255);
+    font-family: ProximaNova;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.offcanvas-title, .offcanvas-title:link, .offcanvas-title:visited{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0px;
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: pre;
+}
+
+.offcanvas-title:hover{
+    text-decoration: underline;
+}
+
+.offcanvas-element, .offcanvas-element:link, .offcanvas-element:visited{
+    color: #fff;
+    text-decoration: none;
+    font-family: ProximaNova;
+    font-size: 16px;
+    line-height: 1.27;
+    padding-right: 5px;
+}
+
+.offcanvas-element:hover{
+    text-decoration: underline;
+}
+
+.offcanvas-social{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #fff;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.social-conteiner{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.follow-us{
+    font-size: 1rem;
+    white-space: nowrap;
+    color: #fff;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.icons{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.offcanvas-footer{
+    margin-top: 10px;
+    font-family: ProximaNova;
+    font-size: 16px;
+    line-height: 1.27;
+    color: #fff;
+}
+
+
+.offcanvas-p{
+    margin: 0px;
+    padding: 0px;
+}
+
 .login, .login:link, .login:visited {
     box-sizing: border-box;
     color: #fff;
