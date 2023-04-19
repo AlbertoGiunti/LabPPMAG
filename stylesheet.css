@@ -2,8 +2,13 @@
     color: white;
 }
 
+.bg-dark{
+    background-color: black !important;
+}
+
 .offcanvas-body{
     padding: 20px 30px;
+    background-color: black;
 }
 
 .offcanvas-top{
@@ -1123,7 +1128,6 @@ ul {
     height: 70px !important;
     padding: 0;
     background: unset !important;
-
 }
 
 .myscrollcardbody{
@@ -1131,7 +1135,13 @@ ul {
     padding-left: 10px;
     padding-right: 5px;
     height: 65px !important;
-    min-width: 90px;
+    overflow: hidden;
+}
+
+.myscrollcardimg{
+    height: 60px;
+    width: 100px;
+    min-width: 100px;
 }
 
 .scroll-txt{
@@ -1139,4 +1149,5 @@ ul {
     font-weight: 400;
     line-height: 1;
     text-align: left;
+
 }
